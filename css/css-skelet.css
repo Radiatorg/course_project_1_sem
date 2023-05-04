@@ -1,0 +1,418 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+html {
+  min-height: 1400px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Ubuntu Condensed', sans-serif; }
+
+body {
+  background-color: #282c2c;
+  height: 100%;
+  min-height: 1400px; }
+
+ul, li {
+  list-style: none;
+  list-style-type: none; }
+
+a {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  color: #9d999d;
+  text-decoration: none; }
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 1920px; }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.header .container {
+  background-color: #000000; }
+
+.main .container {
+  display: flex;
+  background: url(/icons/lines-3.svg) 15% -15px no-repeat, url(/icons/lines-3.svg) 90% 100% no-repeat, #171a1a;
+  background-size: 300px, 300px, cover;
+  /* Меняем масштаб */
+  padding: 0 0 100px 0; }
+
+.main {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  background: url(/icons/lines-1.svg) 80% -100px no-repeat, url(/icons/lines-2.svg) 30% 100% no-repeat;
+  background-size: 800px, 1000px, cover;
+  /* Меняем масштаб */ }
+
+.footer {
+  display: flex;
+  max-width: 100%; }
+
+.footer .container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  justify-content: center;
+  height: 100px;
+  flex-direction: row;
+  background-color: #000000; }
+
+.footer a {
+  padding: 0 5px 0 5px; }
+
+.header {
+  display: flex;
+  justify-content: center;
+  min-width: 100%;
+  height: 70px; }
+
+.top-item-logo {
+  margin: 0 0 0 5%;
+  min-width: 15%; }
+
+.top-logo {
+  display: flex;
+  max-height: 70px;
+  max-width: 100px;
+  width: 100px;
+  height: 70px; }
+
+.top-nav {
+  display: flex; }
+
+.top-search:after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.top-search form {
+  width: auto;
+  float: right;
+  margin-right: 30px; }
+
+.top-search input {
+  width: 200px;
+  height: 32px;
+  margin: 0 0 -10px 80px;
+  padding-left: 45px;
+  border-radius: 42px;
+  border: 2px solid #324b4e;
+  background: #F9F0DA;
+  outline: none;
+  position: relative;
+  transition: .3s linear; }
+
+.top-search input:focus {
+  width: 290px;
+  padding-left: 5px;
+  margin: 0 0 -10px 60px; }
+
+.top-search button {
+  width: 42px;
+  height: 42px;
+  background: none;
+  border: none;
+  position: absolute;
+  top: -2px;
+  right: 0; }
+
+.top-search button:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  color: #324b4e; }
+
+.left-side {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-width: 70%; }
+
+.left-side-name {
+  padding: 40px 0 40px 0; }
+
+#okno {
+  width: 100%;
+  max-width: 1200px;
+  height: 8%;
+  text-align: center;
+  padding-top: 10px;
+  border-top: 3px solid black;
+  background-color: #022020;
+  color: #07cc00;
+  display: none;
+  position: fixed;
+  bottom: 0; }
+
+#okno:target {
+  display: block; }
+
+.close {
+  display: block;
+  float: right;
+  border: 3px solid #028161;
+  border-radius: 100px;
+  color: #008f4c;
+  text-decoration: none;
+  background: #f2f2f2;
+  font-size: 14pt;
+  cursor: pointer;
+  padding: 15px;
+  margin: -60px 50px 0 0; }
+
+.close:hover {
+  background: #e6e6ff; }
+
+audio {
+  display: inline-block;
+  max-width: 1000px;
+  width: 80%; }
+
+.right-side-name {
+  display: flex;
+  margin: 40px 0 40px 0; }
+
+.list-item {
+  display: flex;
+  background-color: azure;
+  width: 300px;
+  height: 150px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 0px 0 20px 0; }
+
+.list-item img {
+  opacity: 50%;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px; }
+
+.menu-main {
+  list-style: none;
+  padding: 15px 0 5px; }
+
+.menu-main li {
+  display: inline-block; }
+
+.menu-main li:after {
+  content: "|";
+  color: #606060;
+  vertical-align: top; }
+
+.menu-main li:last-child:after {
+  content: none; }
+
+.menu-main a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  transition: color .2s; }
+
+.menu-main a, .menu-main a:visited {
+  color: #9d999d; }
+
+.menu-main a.current, .menu-main a:hover {
+  color: #feb386; }
+
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #feb386;
+  transition: .8s; }
+
+.menu-main a:hover:before, .menu-main .current:before {
+  left: 0; }
+
+.menu-main a:hover:after, .menu-main .current:after {
+  right: 0; }
+
+@media (max-width: 1100px) {
+  audio {
+    margin: 0 0 0 -20%; }
+
+  .top-search input {
+    width: 200px;
+    height: 32px;
+    margin: 0 0 0px 0;
+    border-radius: 42px;
+    border: 2px solid #324b4e;
+    background: #F9F0DA;
+    outline: none;
+    position: relative;
+    transition: .3s linear; }
+
+  .top-search input:focus {
+    margin: 0 0 0 0;
+    width: 240px;
+    padding-left: 5px; }
+
+  .menu-main {
+    display: none;
+    min-width: none; }
+
+  .top-item-nav {
+    display: none; }
+
+  .Dropdown-menu {
+    position: absolute;
+    right: 0;
+    width: 70px;
+    height: 70px;
+    background-color: #007575; }
+
+  .main .container {
+    display: flex;
+    flex-direction: column; }
+
+  .wrapper {
+    height: 100%; }
+
+  .right-side {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+
+  .right-side-name {
+    align-content: center; }
+
+  .right-list {
+    display: flex;
+    max-width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: center; }
+
+  .list-item {
+    display: inline-block;
+    max-width: 30%;
+    max-height: 40%; }
+
+  .close {
+    margin: -60px 5% 0 0; } }
+@media (max-width: 800px) {
+  .left-list {
+    max-width: 90%;
+    margin: auto; }
+
+  .music-track {
+    max-width: 100%;
+    padding: auto;
+    margin: auto; } }
+/*выпадающее меню*/
+#menu__toggle {
+  display: none; }
+
+@media (max-width: 1100px) {
+  /* стилизуем кнопку */
+  .menu__btn {
+    display: flex;
+    /* используем flex для центрирования содержимого */
+    align-items: center;
+    /* центрируем содержимое кнопки */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 11; }
+
+  /* добавляем "гамбургер" */
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000000; }
+
+  .menu__btn > span::before {
+    content: '';
+    top: -8px; }
+
+  .menu__btn > span::after {
+    content: '';
+    top: 8px; }
+
+  /* контейнер меню */
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 1830px;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #007575;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+    z-index: 10; }
+
+  /* элементы меню */
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 60px;
+    text-decoration: none; }
+
+  #menu__toggle:checked ~ .menu__btn {
+    position: fixed; }
+
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg); }
+
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0); }
+
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg); }
+
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    right: 0; }
+
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    transition-duration: 0.3s; }
+
+  .menu__box {
+    transition-duration: 0.0s; }
+
+  .menu__item {
+    transition-duration: 0.3s; } }
+
+/*# sourceMappingURL=css-skelet.css.map */

@@ -1,0 +1,93 @@
+#right-name {
+  font-size: 30px; }
+
+.left-side-name #namename {
+  padding: 0 0 0 10px;
+  font-size: 30px;
+  color: #73a894; }
+
+.track {
+  display: flex;
+  flex-direction: column;
+  width: 800px; }
+
+.tmain-info {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  width: 800px; }
+
+.tmain-info-1 {
+  display: flex;
+  flex-direction: row;
+  height: 200px; }
+
+.track-logo {
+  display: flex;
+  height: 200px;
+  background-color: #022020;
+  border: 4px solid black;
+  border-radius: 15px; }
+
+.track-logo img {
+  min-width: 150px;
+  width: 100%;
+  border-radius: 15px; }
+
+.track-info {
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 200px;
+  width: 600px; }
+
+.track-info #a-name {
+  color: #3b721b; }
+
+@media (max-width: 1100px) {
+  .left-side {
+    max-width: 100%;
+    margin: 0 auto; } }
+@media (max-width: 810px) {
+  .left-side {
+    justify-content: left;
+    width: 100%;
+    margin: 0 0 0 5%;
+    padding: 0 0 0 0; }
+
+  .left-list {
+    max-width: 90%;
+    width: 100%;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0; }
+
+  .track {
+    width: 100%; }
+
+  .track-buttons {
+    width: 100%;
+    padding: 20px 0 0 10px; }
+
+  .track-text {
+    max-width: 100%;
+    margin: 50px 5% 0 5%; }
+
+  .tmain-info {
+    width: 100%; }
+
+  .track-info {
+    height: 150px;
+    padding: 0 0 0 20px; }
+
+  .track-logo {
+    height: 150px; }
+
+  .ttext {
+    width: 100%; } }
+@media (max-width: 500px) {
+  .track-buttons {
+    height: 150px;
+    flex-direction: column; } }
+
+/*# sourceMappingURL=music-albom.css.map */
