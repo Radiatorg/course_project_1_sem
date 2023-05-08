@@ -1,16 +1,3 @@
-#right-name {
-  font-size: 30px; }
-
-.left-side-name #namename {
-  padding: 0 0 0 10px;
-  font-size: 30px;
-  color: #73a894; }
-
-.track {
-  display: flex;
-  flex-direction: column;
-  width: 800px; }
-
 .tmain-info {
   display: flex;
   flex-direction: column;
@@ -90,4 +77,3 @@
     height: 150px;
     flex-direction: column; } }
 
-/*# sourceMappingURL=music-albom.css.map */

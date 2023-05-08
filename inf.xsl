@@ -19,7 +19,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
             <td><xsl:value-of select="Resolution"/></td>
         </tr>
         <tr>
-            <th>Год рождения</th>
+            <th>Дата рождения</th>
             <td><xsl:value-of select="Matrix_frequency"/></td>
         </tr>
         <tr>

@@ -1,0 +1,90 @@
+$black:#000000;
+$aqua: #73a894;
+$aquablack: #022020;
+$green: #3b721b;
+$size: 30px;
+$max: 100%;
+$hei: 150px;
+  #right-name {
+    font-size: $size; }
+  
+  .left-side-name #namename {
+    padding: 0 0 0 10px;
+    font-size: $size;
+    color: $aqua; }
+  
+  .track {
+    display: flex;
+    flex-direction: column;
+    width: 800px; }
+  .track-logo {
+    display: flex;
+    height: 200px;
+    background-color: $aquablack;
+    border: 4px solid $black;
+    border-radius: 15px;
+    img {
+      min-width: $hei;
+      width: $max;
+      border-radius: 15px; }
+  }
+  
+  .track-info {
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+    width: 600px;
+    #a-name{
+      color: $green; }
+  }
+  
+
+  
+  @media (max-width: 1100px) {
+    .left-side {
+      max-width: $max;
+      margin: 0 auto; } }
+  @media (max-width: 810px) {
+    .left-side {
+      justify-content: left;
+      width: $max;
+      margin: 0 0 0 5%;
+      padding: 0 0 0 0; }
+  
+    .left-list {
+      max-width: 90%;
+      width: $max;
+      margin: 0 0 0 0;
+      padding: 0 0 0 0; }
+  
+    .track {
+      width: $max; }
+  
+    .track-buttons {
+      width: $max;
+      padding: 20px 0 0 10px; }
+  
+    .track-text {
+      max-width: $max;
+      margin: 50px 5% 0 5%; }
+  
+    .tmain-info {
+      width: $max; }
+  
+    .track-info {
+      height: $hei;
+      padding: 0 0 0 20px; }
+  
+    .track-logo {
+      height: $hei; }
+  
+    .ttext {
+      width: $max; } }
+  @media (max-width: 500px) {
+    .track-buttons {
+      height: $hei;
+      flex-direction: column; } }
+  
+  
