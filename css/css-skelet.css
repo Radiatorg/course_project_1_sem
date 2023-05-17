@@ -43,7 +43,7 @@ a {
 
 .main .container {
   display: flex;
-  background: url(../icons/lines-3.svg) 15% -15px no-repeat, url(../icons/lines-3.svg) 90% 100% no-repeat, #171a1a;
+  background: url(./icons/lines-3.svg) 15% -15px no-repeat, url(./icons/lines-3.svg) 90% 100% no-repeat, #171a1a;
   background-size: 300px, 300px, cover;
   /* Меняем масштаб */
   padding: 0 0 100px 0; }
@@ -52,7 +52,7 @@ a {
   height: 100%;
   display: flex;
   justify-content: space-around;
-  background: url(../icons/lines-1.svg) 80% -100px no-repeat, url(../icons/lines-2.svg) 30% 100% no-repeat;
+  background: url(./icons/lines-1.svg) 80% -100px no-repeat, url(./icons/lines-2.svg) 30% 100% no-repeat;
   background-size: 800px, 1000px, cover;
   /* Меняем масштаб */ }
 
