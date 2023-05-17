@@ -3,32 +3,52 @@
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="PRODUCT">
  <html>
-<head><title>О нас</title>
+<head><title>QN700 Neo QLED 8K</title>
 </head>
  <body>
- <h2>Информация о разработчике</h2>
+ <h2>Info about QN700 Neo QLED 8K</h2>
  <table border="1">
 
    <xsl:for-each select="Attributes">
         <tr>
-            <th>Номер телефона</th>
+            <th>Диагональ экрана</th>
             <td><xsl:value-of select="Screen_diagonal"/></td>
         </tr>
         <tr>
-            <th>Адрес проживания</th>
+            <th>Разрешение</th>
             <td><xsl:value-of select="Resolution"/></td>
         </tr>
         <tr>
-            <th>Дата рождения</th>
+            <th>Частота матрицы</th>
             <td><xsl:value-of select="Matrix_frequency"/></td>
         </tr>
         <tr>
-            <th>Место обучения</th>
+            <th>Ширина</th>
             <td><xsl:value-of select="Width"/></td>
         </tr>
         <tr>
-            <th>Силовые параметры</th>
+            <th>Высота (с учетом подставки)</th>
             <td><xsl:value-of select="Heihgt"/></td>
+        </tr>
+        <tr>
+            <th>Глубина (с учетом подставки)</th>
+            <td><xsl:value-of select="Depth_with_stand"/></td>
+        </tr>
+        <tr>
+            <th>Высота (без подставки):</th>
+            <td><xsl:value-of select="Heihgt"/></td>
+        </tr>
+        <tr>
+            <th>Толщина панели:</th>
+            <td><xsl:value-of select="Panel_thickness"/></td>
+        </tr>
+        <tr>
+            <th>Вес (с подставкой): </th>
+            <td><xsl:value-of select="Weight_with_stand"/></td>
+        </tr>
+        <tr>
+            <th>Вес (без подставкой): </th>
+            <td><xsl:value-of select="Weight"/></td>
         </tr>
     </xsl:for-each>
 
